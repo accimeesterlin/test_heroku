@@ -30,4 +30,8 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/about', (req, res) => {
+    res.json({ message: 'It works' });
+});
+
 app.listen(PORT, () => log('Server is starting at ', PORT));
